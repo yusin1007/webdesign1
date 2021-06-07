@@ -1,0 +1,322 @@
+* {
+    padding:0 ;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: white;
+}
+.container{
+    margin-right:auto;
+    margin-left:auto;
+    padding-left:15px;
+    padding-right:15px;
+}
+.section-container {
+    padding: 80px 0;
+}
+.section-container-spacer {
+    margin-bottom: 30px;
+}
+h2:after{
+    content:"";
+    display:block;
+    background-color:#70522e;
+    height:3px;
+    margin:20px auto;
+    width:70px;
+    
+    
+}
+h2.text-center:after{
+    margin:20px auto;
+}
+h3.text-center{
+    text-align: center;
+}
+.text-center {
+    color: black;
+}
+.text-center-p {
+    color: black;
+    text-align: center;
+}
+
+.fa-container:focus{
+    border-color: rgb(163, 55, 36);
+    outline: 0;
+    box-shadow:0 0 8px rgb(221, 115, 96);
+}
+/*-----------Hrader------------*/
+.fixed {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    right: 0;
+    z-index: 10;
+}
+.header {
+    width: 100%;
+    margin: auto;
+    background-color: rgba(163, 163, 163, 0.507);
+    padding: 10px;
+    height: 70px;
+    border-radius: 5px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header p {
+    margin-left: 20px;
+    font-size: 20px;
+}
+.header-menu{
+    list-style-type: none;
+}
+.header-menu li {
+    display: inline-block;
+    /* background: chocolate; */
+    width: 100px;
+    text-align: center;
+    margin-right: 10px;
+    font-weight: 800;
+}
+.header-menu li:last-child {
+    margin-right: 0;
+}
+.header-menu li .en{
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+.header-menu a {
+    text-decoration: none;
+    color: inherit;
+    }
+.header-menu a:hover {
+    color: rgb(8, 8, 65);}
+
+.header-menu li.active {
+    color:rgb(255, 255, 255);
+    }
+
+/*------------開頭--------------*/
+.background-image-container {
+    background-image: url(IMAGES/back-head.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    text-align: center;
+    width: 100%;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+.overlay{
+    background-color:hsla(0,0%,100%,.2);
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+}
+.title{
+    float:left;
+    width: 100%;
+    text-align: center;
+}
+.title h1 {
+    font-size: 100px;
+
+} 
+.title p {
+    font-size: 50px;
+}
+
+/*--------核心理念---------*/
+
+.fa-icon img {
+    width:15%;
+    margin: auto;
+    margin-bottom: 5%;
+    display:block;
+    line-height:32px;
+
+}
+@media screen and (max-width :767px) {
+    .col-6 {
+        max-width : 30%
+    }
+}
+
+/*--------公司簡介--------*/
+
+.section-half-background-image-container {
+    position:relative;
+    background-color:rgba(136, 80, 15, 0.87);
+    padding:80px 0 100px;
+}
+
+.section-half-background-image-container .image-column{
+    position:absolute;
+    display:block;
+    top:0;
+    z-index:0;
+    bottom:0;
+    width:50%;
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-position:center;
+}
+.section-label { 
+    display:flex;
+    color:rgba(80, 77, 77, 0.685);
+    font-size:7em;
+    font-family:Abril Fatface,Times New Roman,Times,serif;
+    position:absolute;
+    left:50%;
+    z-index:2;
+    top:0;
+    height:100%;
+    text-transform:uppercase;
+    align-items:center;
+}
+.section-label p {
+    width:80%;
+    margin-left:-130px;
+    word-break: break-all;
+}
+.col-md-offset-6 {
+    margin-left: 50%;
+}
+.text-colum h2,h3,p{
+    color: black;
+}
+@media screen and (max-width : 838px) {
+    .section-label p {
+        width: 80%;
+        margin-left:-130px;
+        word-break: normal;
+    }
+    
+}
+
+/*---------產品介紹---------*/
+.fa-image img{
+    width:80%;
+    height: 50%;
+    border-radius: 50%;
+    margin: auto;
+    margin-bottom: 5%;
+    display:block;
+    line-height:32px;
+}
+
+/*--------新品上市倒數計時 時間設定在2021/7/7----------*/
+.col-md-offset-2 {
+    margin-left: 20%;
+}
+.clock-container {
+    width: 95%;
+    height: 500px;
+    background-image: url(IMAGES/新品上市.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
+    position: relative;
+    margin: auto;
+    display: block;
+    /* filter:opacity(0.5) */
+
+}
+.section-container-space h2{
+    text-align: center;
+    font-size: 60px;
+    color:rgba(0, 0, 0, 0.74);
+}
+
+#clockid{ 
+    width: 70%;
+    margin: auto;
+    font-family: sans-serif;
+    color: rgb(0, 0, 0); 
+    font-weight: 100;
+    font-size: 40px; 
+    display: flex;
+    
+    } 
+#clockid > div{
+    margin: auto;
+     padding: 15px; 
+     border-radius: 3px;
+    
+    display: inline-block;
+    }
+#clockid div > span{ 
+    padding: 35px;
+    margin: 5px;
+    margin-top: 100%; 
+    border-radius: 3px; 
+    background: #1a1a1ab7; 
+    display: inline-block;
+    } 
+.smalltext{ 
+    margin-left: 25%;
+    padding-top: 5%;
+    font-size: 25px;  
+    font-weight: 1000;  
+    }
+@media screen and (max-width:800px) {
+    .clock-container {
+        width: 95%;
+        height: 500px;
+    }
+    #clockid div > span{
+        padding: 0;
+        margin: 0;
+        background :none
+
+    }
+    .smalltext{ 
+        margin: 0 0 0 10%;
+        padding-top: 5%;
+        font-size: 25px;    
+        }
+    }
+/*-------get in touch------------*/
+.btn-primary{
+    color:#fff;
+    background-color:#4e2906;
+    border-color:#4e2906;
+}
+
+
+/*-------結尾------------*/
+.footer-container{
+    background-color:#ac773b;
+    padding:60px 0;
+    margin-top:30pxㄤ
+}
+.col-md-4 h4,p {
+    color: white;
+}
+
+.small p {
+    color:white;
+}
+
+.social a img {
+    width: 10%;
+}
+.btn-default:hover{
+    background-color:#4e2906;
+    color:#fff;
+    border-color:#4e2906;
+}
